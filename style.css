@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.colourful {
+    background:
+        -webkit-linear-gradient(45deg, hsla(332, 18%, 55%, 1) 0%, hsla(332, 18%, 55%, 0) 70%),
+        -webkit-linear-gradient(315deg, hsla(290, 22%, 50%, 1) 10%, hsla(290, 22%, 50%, 0) 80%),
+        -webkit-linear-gradient(225deg, hsla(342, 27%, 50%, 1) 10%, hsla(342, 27%, 50%, 0) 80%),
+        -webkit-linear-gradient(135deg, hsla(169, 0%, 100%, 1) 100%, hsla(169, 0%, 100%, 0) 70%);
+    background:
+        linear-gradient(45deg, hsla(332, 18%, 55%, 1) 0%, hsla(332, 18%, 55%, 0) 70%),
+        linear-gradient(135deg, hsla(290, 22%, 50%, 1) 10%, hsla(290, 22%, 50%, 0) 80%),
+        linear-gradient(225deg, hsla(342, 27%, 50%, 1) 10%, hsla(342, 27%, 50%, 0) 80%),
+        linear-gradient(315deg, hsla(169, 0%, 100%, 1) 100%, hsla(169, 0%, 100%, 0) 70%);
+}
+
+section.background {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#box{
+    margin-top:10%;
+    height:400px;
+    border: 1px solid black;
+}
+
+img{
+    height: 300px;
+    width: 700px;
+}
+
+.iui-treeview-item
+{
+margin: 3px 0;
+}
+.iui-treeview-item-content
+{
+padding: 4px;
+}
+.top-panel
+{
+background: #2455b0;
+padding: 3px;
+margin-bottom: 1px;
+width: 400px;
+}
+button
+{
+background: transparent;
+border: thin solid transparent;
+color: white;
+padding: 5px 10px;
+display: inline-block;
+vertical-align: middle;
+}
+button:hover
+{
+background-color: #153268;
+border: thin solid #0F244A;
+}
+.icon-add
+{
+background: url("../../../resources/icons-x24.png") no-repeat -48px -120px;
+display: inline-block;
+width: 24px;
+height: 24px;
+vertical-align: middle;
+}
+.icon-remove
+{
+background: url("../../../resources/icons-x24.png") no-repeat -72px -120px;
+display: inline-block;
+width: 24px;
+height: 24px;
+vertical-align: middle;
+}
+
+#textarea {
+    height:100%;
+    background-color:beige;
+    width:100%;
+    resize:both; border:none;
+    padding:0px; margin:0px;
+    
+}

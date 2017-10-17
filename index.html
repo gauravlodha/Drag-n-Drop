@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Dependencies! -->
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    
+    <!-- Styles! -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.css">
+    
+</head>
+
+<body ng-app="myApp">
+    <section class="background colourful"></section>
+    <nav class="navbar navbar-default" style="border: 1px solid skyblue;">
+        <div class="row">
+            <div class="navbar-brand col-sm-4"><h1>Activity Area</h1></a></div>
+    </nav>
+    <div class="row" ng-controller="MainController">
+        <div class="col-sm-3 "></div>
+        <div id="box" class="col-sm-6">
+            <div class="dropzone" file-dropzone="[image/png, image/jpeg, image/gif]" file="image" file-name="imageFileName" data-max-file-size="3">
+                <span>Drop Image Here</span>
+            </div>
+            <form action>
+                <input type="file" fileread="uploadme.src">
+                <img ng-src="{{ uploadme.src }}">
+            </form>
+        </div>   
+    </div>
+    <button id="new"><strong>Click Me!</strong></button>
+</body>
+</html>
