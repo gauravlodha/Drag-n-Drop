@@ -26,7 +26,7 @@
         <div class="row">
             <div class="navbar-brand col-sm-4"><h1>Activity Area</h1></a></div>
     </nav>
-    <div class="row" ng-controller="MainController">
+    <div class="row" ng-controller="MainController" id="container">
         <div class="col-sm-3 "></div>
         <div id="box" class="col-sm-6">
             <div class="dropzone" file-dropzone="[image/png, image/jpeg, image/gif]" file="image" file-name="imageFileName" data-max-file-size="3">
@@ -38,6 +38,11 @@
             </form>
         </div>   
     </div>
+    <br/>
+    <div>
     <button id="new"><strong>Click Me!</strong></button>
+    <button id="btn_drawar">Enable Drawing</button> 
+    <button id="btn_delar">Delete Arrows</button>
+</div>
 </body>
 </html>

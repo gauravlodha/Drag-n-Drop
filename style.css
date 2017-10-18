@@ -46,7 +46,7 @@ section.background {
 
 img{
     height: 300px;
-    width: 700px;
+    width: 600px;
 }
 
 .iui-treeview-item
@@ -96,10 +96,18 @@ vertical-align: middle;
 }
 
 #textarea {
-    height:100%;
+    /* height:100%; */
     background-color:beige;
-    width:100%;
-    resize:both; border:none;
-    padding:0px; margin:0px;
-    
+    /* width:100%; */
+    resize:both; 
+    /* padding:0px; margin:0px;     */
 }
+#container {
+    position:relative;
+    margin:8px auto;
+    border:2px dashed #111;
+    padding:3px;
+    }
+    
+div 
+{ padding:0px; }
