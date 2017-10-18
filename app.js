@@ -105,8 +105,8 @@ app.directive('fileDropzone', function() {
 $(function() {
   $('#new').click(function() {
       var new_offset = {top:100, left:400};
-    var new_width = 150;
-    var new_height = 150;
+    var new_width = 117;
+    var new_height = 38;
     var newElement$ = $('<div>Drag Here<button class=btn btn-success onclick=fun(this)>X</button><textarea id="textarea" placeholder="Point something and write about it."></textarea></div>')
      .width(new_width)
      .height(new_height)
@@ -197,7 +197,7 @@ function drawArrowSVG(parent){
 
  //append in #container SVG arrow with base in $c_e1 and the arrow in $c_e2 coords
  function drawArrow(c_e1, c_e2){
-   var arrsvg = '<svg class="arrsvg" style="position:absolute; top:0; left:0; margin:0; width:99.8%; height:99.9%;"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refx="3" refy="4" orient="auto"><path d="M1,1 L1,7 L7,4 L1,1" style="fill:red;" /></marker></defs><path d="M'+ c_e1.x +','+ c_e1.y +' L'+ c_e2.x +','+ c_e2.y +'" style="stroke:red; stroke-width: 2.3px; fill: none; marker-end: url('+ location.href.replace(/[#]*$/ig, '') +'#arrow);"/></svg>';
+   var arrsvg = '<svg class="arrsvg" style="position:absolute; top:0; left:0; margin:0; width:99.8%; height:99.9%;"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refx="3" refy="4" orient="auto"><path d="M1,1 L1,7 L7,4 L1,1" style="fill:black;" /></marker></defs><path d="M'+ c_e1.x +','+ c_e1.y +' L'+ c_e2.x +','+ c_e2.y +'" style="stroke:red; stroke-width: 2.3px; fill: none; marker-end: url('+ location.href.replace(/[#]*$/ig, '') +'#arrow);"/></svg>';
    container.insertAdjacentHTML('beforeend', arrsvg);  //add the arrow to the end in #container
  }
 
@@ -212,16 +212,20 @@ var drawAr = new drawArrowSVG(elm_container);
 var btn_drawar = document.getElementById('btn_drawar');
 if(btn_drawar) btn_drawar.addEventListener('click', function(e){
  drawAr.draw *=-1;
- e.target.style.background = (drawAr.draw ==1) ? '#f00' :'#dadafb';
- e.target.innerHTML = (drawAr.draw ==1) ? 'Disable Drawing' :'Enable Drawing';
+ e.target.style.background = (drawAr.draw ==1) ? '#f00' :'#014c8c';
+ e.target.innerHTML = (drawAr.draw ==1) ? 'Disable Drawing' :'Draw Aroow Here';
 });
 
 //register click on #btn_delar to delete arrows
 var btn_delar = document.getElementById('btn_delar');
 if(btn_delar) btn_delar.addEventListener('click', function(e){
- var arrsvg = document.querySelectorAll('.arrsvg');
+ var arrsvg = document.querySelector('.arrsvg').remove();
+//for(var i=0; i<arrsvg.length; i++) arrsvg[i].outerHTML ='';
+});
+if(btn_delar) btn_delar1.addEventListener('click', function(e){
+  var arrsvg = document.querySelectorAll('.arrsvg');
 for(var i=0; i<arrsvg.length; i++) arrsvg[i].outerHTML ='';
-//$('btn_delar').parent().remove();
+
 });
 });
 

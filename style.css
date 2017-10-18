@@ -107,7 +107,8 @@ vertical-align: middle;
     margin:8px auto;
     border:2px dashed #111;
     padding:3px;
+    height: 500px;
     }
-    
-div 
-{ padding:0px; }
+
+/* div 
+{ padding:0px; } */
