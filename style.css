@@ -39,7 +39,7 @@ section.background {
 }
 
 #box{
-    margin-top:10%;
+    margin-top:4%;
     height:400px;
     border: 1px solid black;
 }
@@ -112,3 +112,87 @@ vertical-align: middle;
 
 /* div 
 { padding:0px; } */
+
+#drag{
+	text-align: center;
+}
+
+#bar1{
+
+	border:1px solid skyblue;
+	color:aliceblue;
+	position:fixed;
+}
+
+#line{
+	border:1px solid skyblue;	
+}
+
+#arrow{
+	border: 1px solid darkgreen;
+	position: relative;
+	transform: rotate(-45deg);
+}
+
+
+.row112{ 
+		height: 100px;
+		width:170px;
+      position: fixed;   
+      transform: rotate(90deg);
+}
+.row12{
+    height: 100px;
+    width:170px;
+	position: fixed;   
+}
+.row1{
+	color:white;
+	    text-align: center;
+}
+#rowid{
+	resize:both;
+	overflow:auto;
+	min-height:34px;
+	min-width:170px;
+}
+#part1{
+	float:left;
+}
+#part2{
+	border: 1px solid red;   
+	width: 98.4%;
+    margin-top: 14px;
+    margin-left: 2px;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-left: 15px solid black;
+  border-bottom: 15px solid transparent;
+  float: right;
+      margin-top: -16px;
+  
+}
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 15px solid black;
+  border-bottom: 15px solid transparent;
+}
+
+.row11{
+		color:white;
+	    text-align: center;
+}
+
+#close{
+	    font-size: 7px;
+    padding: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+	
+}
